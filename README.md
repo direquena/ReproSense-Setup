@@ -24,7 +24,7 @@ Com ele instalado, o sistema passa a suportar:
 
 | Versão | Arquivo | |
 |--------|---------|---|
-| Mais recente | `ReproSense_ColetorLocal_Setup.exe` | [**Baixar**](https://github.com/direquena/ReproSense-Setup/releases/latest/download/ReproSense_ColetorLocal_Setup.exe) |
+| Mais recente | `ReproSense_Setup.exe` | [**Baixar**](https://github.com/direquena/ReproSense-Setup/releases/latest/download/ReproSense_Setup.exe) |
 
 ---
 
@@ -32,15 +32,8 @@ Com ele instalado, o sistema passa a suportar:
 
 1. Baixe o instalador acima
 2. Execute como **Administrador**
-3. Siga o assistente de instalação
-4. Após instalar, edite o arquivo `.env` no diretório de instalação e configure:
-
-```env
-DJANGO_BASE_URL=https://app.reprosense.com.br
-DJANGO_TOKEN=seu_token_aqui
-```
-
-5. Reinicie o serviço — o Coletor estará disponível em `http://localhost:5150`
+3. Siga o assistente de instalação — informe a URL do seu servidor ReproSense quando solicitado
+4. Após instalar, o Coletor estará disponível em `http://localhost:5150`
 
 ---
 
