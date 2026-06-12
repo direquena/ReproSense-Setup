@@ -34,8 +34,7 @@ Com ele instalado, o sistema passa a suportar:
 1. Baixe o instalador acima
 2. Execute como **Administrador**
 3. Siga o assistente de instalação — informe a URL do seu servidor ReproSense quando solicitado
-4. Após instalar, o Coletor estará disponível em `http://localhost:5150`
-5. A máquina aparecerá automaticamente no módulo **RMM** do servidor para ser vinculada à empresa
+4. A máquina aparecerá automaticamente no módulo **RMM** do servidor para ser vinculada à empresa
 
 ---
 
