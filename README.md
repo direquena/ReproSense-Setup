@@ -23,9 +23,9 @@ Com ele instalado, o sistema passa a suportar:
 
 ## Download
 
-| Versão | Arquivo | |
-|--------|---------|---|
-| Mais recente | `ReproSense_Setup.exe` | [**Baixar**](https://github.com/direquena/ReproSense-Setup/releases/latest/download/ReproSense_Setup.exe) |
+| Versão | Data | Arquivo | |
+|--------|------|---------|---|
+| v2.0.0 | 12/06/2026 | `ReproSense_Setup.exe` | [**Baixar**](https://github.com/direquena/ReproSense-Setup/releases/latest/download/ReproSense_Setup.exe) |
 
 ---
 
