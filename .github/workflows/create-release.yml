@@ -1,0 +1,28 @@
+name: Cria Release no GitHub
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - version.json
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Lê versão do version.json
+        id: ver
+        run: echo "version=$(jq -r .version version.json)" >> $GITHUB_OUTPUT
+
+      - name: Cria Release v${{ steps.ver.outputs.version }}
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ steps.ver.outputs.version }}
+          name: ReproSense Coletor Local v${{ steps.ver.outputs.version }}
+          files: ReproSense_Setup.exe
+          body: |
+            Instalador do ReproSense Coletor Local versão ${{ steps.ver.outputs.version }}.
