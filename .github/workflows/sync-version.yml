@@ -1,0 +1,43 @@
+name: Sincroniza versão com ReproSense
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - version.json
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Lê versão do version.json
+        id: ver
+        run: echo "version=$(jq -r .version version.json)" >> $GITHUB_OUTPUT
+
+      - name: Atualiza coletor_version.json no ReproSense
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.REPROSENSE_TOKEN }}
+          script: |
+            const version = '${{ steps.ver.outputs.version }}';
+            const content = JSON.stringify({ version }, null, 2) + '\n';
+            const encoded = Buffer.from(content).toString('base64');
+
+            const { data: file } = await github.rest.repos.getContent({
+              owner: 'direquena',
+              repo: 'ReproSense',
+              path: 'rmm/coletor_version.json',
+            });
+
+            await github.rest.repos.createOrUpdateFileContents({
+              owner: 'direquena',
+              repo: 'ReproSense',
+              path: 'rmm/coletor_version.json',
+              message: `chore(rmm): atualiza versão do Coletor para ${version}`,
+              content: encoded,
+              sha: file.sha,
+            });
+
+            console.log(`Versão ${version} sincronizada com ReproSense.`);
