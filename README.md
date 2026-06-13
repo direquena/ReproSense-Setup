@@ -17,7 +17,6 @@ Com ele instalado, o sistema passa a suportar:
 - Software de análise seminal CASA / HTCore
 - Sensores de condutividade e temperatura
 - Estação meteorológica Ambient Weather
-- **Monitoramento remoto da máquina (RMM)** — métricas de CPU, RAM, disco, eventos Windows e comandos remotos
 
 ---
 
@@ -25,7 +24,7 @@ Com ele instalado, o sistema passa a suportar:
 
 | Versão | Data | Arquivo | |
 |--------|------|---------|---|
-| v2.0.0 | 12/06/2026 | `ReproSense_Setup.exe` | [**Baixar**](https://github.com/direquena/ReproSense-Setup/releases/latest/download/ReproSense_Setup.exe) |
+| v2.2.0 | 13/06/2026 | `ReproSense_Setup.exe` | [**Baixar**](https://github.com/direquena/ReproSense-Setup/releases/latest/download/ReproSense_Setup.exe) |
 
 ---
 
@@ -34,7 +33,6 @@ Com ele instalado, o sistema passa a suportar:
 1. Baixe o instalador acima
 2. Execute como **Administrador**
 3. Siga o assistente de instalação — informe a URL do seu servidor ReproSense quando solicitado
-4. A máquina aparecerá automaticamente no módulo **RMM** do servidor para ser vinculada à empresa
 
 ---
 
