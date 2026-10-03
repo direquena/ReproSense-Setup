@@ -74,7 +74,7 @@ Com ele instalado, o sistema passa a suportar:
 | | Mínimo | Recomendado |
 |---|---|---|
 | SO | Windows 10 64-bit | Windows 11 64-bit |
-| CPU | Dual-core moderno (Intel i3 / Ryzen 3 ou equivalente) | Quad-core ou superior (Intel i5 / Ryzen 5+) |
+| CPU | Dual-core, 8ª geração Intel Core / Ryzen 2000 ou mais recente | Quad-core, 10ª geração Intel Core / Ryzen 5000 ou mais recente |
 | RAM | 4 GB | 8 GB |
 | Armazenamento | 1 GB livre | SSD, 5 GB livre |
 | Monitor | 1920×1080, 60Hz | 1920×1080 (ou superior), 120Hz+ |
@@ -86,11 +86,11 @@ Com ele instalado, o sistema passa a suportar:
 
 | | Mínimo | Recomendado |
 |---|---|---|
-| CPU | Quad-core (i5/Ryzen 5) | 6+ núcleos (i7/Ryzen 7) — análise ao vivo + codificação de vídeo em tempo real pesam |
+| CPU | Quad-core, 8ª geração Intel Core / Ryzen 2000 ou mais recente | 6+ núcleos, 10ª geração Intel Core / Ryzen 5000 ou mais recente — análise ao vivo + codificação de vídeo em tempo real pesam |
 | RAM | 8 GB | 16 GB |
 | Monitor | 60Hz | 120Hz+ — percepção fluida do movimento das células em câmeras de alto FPS (a análise em si não depende do monitor) |
 | Câmera industrial USB3 Vision (ex.: GOX-3200M) | Porta USB 3.0 dedicada, direto na placa-mãe (não em hub) | Porta USB3 exclusiva pra câmera (nada mais dividindo a banda) |
-| Câmera industrial GigE Vision (ex.: CM-040GE) | Placa de rede própria, só pra câmera (não a mesma rede do escritório) | Placa de rede Gigabit dedicada + Jumbo Frames habilitado |
+| Câmera industrial GigE Vision (ex.: CM-040GE) | Placa de rede própria, só pra câmera (não a mesma rede do escritório), ou adaptador USB3 → RJ45 | Placa de rede Gigabit dedicada + Jumbo Frames habilitado |
 | Software extra | Python 3.12 + eBUS SDK (só p/ câmera GigE — o instalador oferece isso) | — |
 
 > Uma câmera entregando menos FPS do que o configurado costuma ser gargalo de hardware (porta USB compartilhada, placa de rede genérica) — vale conferir a dedicação de porta/rede antes de suspeitar do software.
